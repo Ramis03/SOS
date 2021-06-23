@@ -1,0 +1,78 @@
+.store{
+  padding: 200px 0 150px;
+  background: url("../images/store/bgStore.webp") top left/100% 100% no-repeat;
+  &__subtitle{
+    @include text($bebas, normal, 24px, 29px, #FFFFFF);
+    letter-spacing: 2px;
+    margin-top: 45px;
+  }
+  &__title{
+    @include text($bebas, normal, 80px, 96px, #FFFFFF);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  &__description{
+    @include text($opensans, normal, 18px, 22px, #FFFFFF);
+  }
+  &__images{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+}
+.carousel{
+  width: 500px;
+  height: 600px;
+  position: relative;
+}
+
+.items {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.main-pos {
+  margin-left: 32px !important;
+  z-index: 3000;
+}
+
+.left-pos {
+  margin-left: 0 !important;
+  z-index: 1000;
+  transform: scale(.75);
+}
+
+.back-pos {
+  margin-left: 192px !important;
+  transform: scale(.5);
+}
+
+.right-pos {
+  margin-left:  112px !important;
+  z-index: 1000;
+  transform: scale(.75);
+}
+
+.dd-options{
+  li{
+    margin-bottom: 5px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+.store__col{
+  position: relative;
+}
+#next{
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+}

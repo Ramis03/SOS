@@ -1,0 +1,51 @@
+.features{
+  padding: 170px 0 260px 0;
+  background: url("../images/features/bg.webp") top left/100% 100% no-repeat;
+  &__subtitle{
+    @include text($bebas, normal, 24px, 29px, #FFFFFF);
+    letter-spacing: 2px;
+  }
+  &__title{
+    @include text($bebas, normal, 80px, 96px, #FFFFFF);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+  }
+  &__descriptionTitle{
+    @include text($bebas, normal, 36px, 70px, #FFB548);
+    letter-spacing: 2px;
+    transition: .7s;
+    cursor: pointer;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  //&__descriptionTitle:hover +   &__descriptionSubtitle{
+  //  font-size: 18px;
+  //  transition: .7s;
+  //  transform: translate(100%);
+  //  display: block;
+  //}
+  &__descriptionSubtitle{
+    @include text($opensans, normal, 18px, 22px, #FFFFFF);
+    transition: 1s;
+    opacity: 0;
+    //transform: translate(-50%);
+    position: relative;
+    &_active{
+      opacity: 1;
+      transition: 1s;
+      position: relative;
+        //transform: translate(50%);
+    }
+  }
+  &__block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__menu{
+    list-style-type: none;
+  }
+
+}

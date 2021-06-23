@@ -1,0 +1,28 @@
+.system{
+  padding: 150px 0 170px;
+  background: url("../images/system/bg.webp") top left/100% 100% no-repeat;
+  table,tr,td{
+    border-collapse: collapse;
+    border: 1px solid #979797;
+    padding: 20px;
+  }
+  &__subtitle{
+    @include text($bebas, normal, 24px, 29px, #FFFFFF);
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  &__title{
+    @include text($bebas, normal, 80px, 96px, #FFFFFF);
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 135px;
+  }
+  &__tableTitle{
+    @include text($bebas, normal, 24px, 29px, #FFB548);
+    letter-spacing: 2px;
+  }
+  &__tableSubtitle{
+    @include text($opensans, normal, 18px, 22px, #FFFFFF);
+  }
+}

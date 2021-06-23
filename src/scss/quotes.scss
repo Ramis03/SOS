@@ -1,0 +1,77 @@
+.quotes{
+  padding: 160px 0 150px;
+  background: url("../images/quotes/bg.webp") top left/100% 100% no-repeat;
+  &__title{
+    @include text($bebas, normal, 80px, 96px, #FFFFFF);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  &__subtitle{
+    @include text($bebas, normal, 24px, 29px, #FFFFFF);
+    letter-spacing: 2px;
+    margin-top: 145px;
+  }
+  &__description{
+    @include text($opensans, normal, 18px, 22px, #FFFFFF);
+    margin: 50px 0 65px;
+  }
+  &__btn{
+    @include btn();
+  }
+  &__person{
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    position: relative;
+    margin-top: 30px;
+    padding: 15px 20px 20px 15px;
+    cursor: default;
+    display: block;
+    &::before{
+      content: url("../images/quotes/twitter.svg");
+      position: absolute;
+      top: 30px;
+      right: 20px;
+    }
+  }
+  &__blockImg{
+    display: flex;
+  }
+  &__img{
+    width: 64px;
+    height: 64px;
+    background: #FFB548;
+    border-radius: 50%;
+    margin: 0 22px 25px 0;
+  }
+  &__personName{
+    @include text($bebas, normal, 24px, 29px, #FFB548);
+    letter-spacing: 2px;
+  }
+  &__personOut{
+    @include text($opensans, normal, 18px, 22px, #FFFFFF);
+    opacity: 0.5;
+  }
+  &__personComment{
+    @include text($opensans, normal, 18px, 25px, #FFFFFF);
+    margin-bottom: 20px;
+  }
+  &__personTime{
+    @include text($opensans, normal, 14px, 19px, #FFFFFF);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  &__col6{
+    display: flex;
+    flex-direction: column;
+    &:first-child{
+      justify-content: flex-end;
+    }
+    &:nth-child(2){
+      justify-content: center;
+    }
+    &:last-child{
+      justify-content: start;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.footer{
+  padding: 20px 0 50px;
+  background: #080A0B;
+  &__nav{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #FFFFFF;
+  }
+  &__logo{
+    width: 90px;
+    height: 90px;
+  }
+  &__menu{
+    display: flex;
+    list-style-type: none;
+  }
+  &__item{
+    margin-right: 55px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__itemLink{
+    @include text($bebas, bold, 12px, 16px, #FFFFFF);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover{
+      color: white;
+    }
+  }
+  &__icons{
+    color: #FFFFFF;
+  }
+  &__bottomText{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  &__allRight{
+    @include text($opensans, normal, 14px, 19px, #FFFFFF);
+    opacity: 0.5;
+  }
+  &__privacy{
+    @include text($opensans, bold, 12px, 16px, #FFFFFF);
+    text-transform: uppercase;
+  }
+}
+
+
+.fa-facebook-f, .fa-twitter, .fa-youtube{
+  margin-right: 60px;
+}
+.fa-facebook-f:active, .fa-twitter:active, .fa-youtube:active, .fa-twitch:active{
+  color: #FF1313;
+}

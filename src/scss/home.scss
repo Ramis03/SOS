@@ -1,0 +1,21 @@
+.home{
+  padding: 315px 0 450px;
+  background: url("../images/home/home.webp") top left/100% 100% no-repeat;
+  &__title{
+    @include text($bebas, normal, 80px, 96px, #FFFFFF);
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  &__subtitle{
+    @include text($bebas, normal, 24px, 29px, #FFFFFF);
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0 0 30px;
+  }
+  &__btn{
+    @include btn();
+    display: block;
+    margin: 0 auto;
+  }
+}

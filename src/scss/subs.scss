@@ -1,0 +1,64 @@
+.subs{
+  padding: 50px 0 0 0;
+  background: #080A0B;
+  &__image{
+    max-width: 30%;
+    max-height: 100%;
+    margin-right: 120px;
+    z-index: 10;
+  }
+  &__img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  &__subtitle{
+    @include text($bebas, normal, 24px, 29px, #FFFFFF);
+    letter-spacing: 2px;
+  }
+  &__title{
+    @include text($bebas, normal, 80px, 96px, #FFFFFF);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  &__description{
+    @include text($opensans, normal, 18px, 22px, #FFFFFF);
+    margin: 50px 0 70px;
+
+  }
+  &__inputBlock{
+    width: 60%;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+    padding: 5px 20px 15px;
+    margin-right: 17px;
+  }
+  &__btn{
+    @include btn();
+    width: 40%;
+  }
+  &__block{
+    display: flex;
+  }
+  &__text{
+    max-width: 70%;
+    max-height: 100%;
+  }
+  &__input{
+    @include text($opensans, normal, 18px, 25px, #FFB548);
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  &__inputText{
+    @include text($opensans, normal, 14px, 19px, #FFFFFF);
+    opacity: 0.5;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  &__inputForm{
+    display: flex;
+    justify-content: space-between;
+  }
+}

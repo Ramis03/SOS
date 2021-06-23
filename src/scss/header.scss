@@ -1,0 +1,76 @@
+.header{
+  width: 100%;
+  position: absolute;
+  &__logoBurger{
+    display: none;
+  }
+  &__langSelect{
+    width: 96px;
+    height: 32px;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-family: Lato,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  &__nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo{
+    width: 55px;
+    height: 55px;
+  }
+  &__menu{
+    display: flex;
+    list-style-type: none;
+  }
+  &__item{
+    margin-right: 55px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__itemLink{
+    @include text($bebas, bold, 12px, 16px, #FFFFFF);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover{
+      color: white;
+    }
+  }
+  &__form{
+    display: flex;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__labelSelect{
+    width: 70px;
+    border-right: 1px solid rgba(255, 255, 255, .5);
+    margin-right: 25px;
+  }
+  &__icons{
+    color: #FFB548;
+    .fa-steam, .fa-xbox{
+      width: 30px;
+      height: 30px;
+    }
+    .fa-steam:active, .fa-xbox:active{
+      color: #FF1313;
+    }
+    .fa-steam{
+      margin-right: 17px;
+    }
+  }
+}
+
+
