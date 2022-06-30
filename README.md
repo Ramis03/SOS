@@ -1,1 +1,1 @@
-Создана с помощью HTML, CSS, JS, 
+Создана с помощью HTML, SCSS, JS, JQuery, Bootstrap
