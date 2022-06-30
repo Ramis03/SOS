@@ -1,2 +1,1 @@
-hosting
-https://ramiscc.github.io/sos
+Создана с помощью HTML, CSS, JS, 
